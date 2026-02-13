@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-valentine-pink: #ffdae9;
+  --color-valentine-red: #ff4d6d;
+  --font-display: "Dancing Script", cursive;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  @apply bg-[#0f0505] text-white overflow-hidden m-0 p-0 font-sans;
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
